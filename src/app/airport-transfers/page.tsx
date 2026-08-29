@@ -33,9 +33,10 @@ export default function AirportTransfersPage() {
               />
             </p>
             <div className="cta-row">
+              {/* Booking page on hold until the client asks for it.
               <Link className="solid-button" href="/book-now">
                 <T en="Book airport transfer" es="Reservar traslado" />
-              </Link>
+              </Link> */}
               <Link className="outline-button" href="/rates">
                 <T en="See fixed rates" es="Ver tarifas fijas" />
               </Link>
@@ -185,7 +186,7 @@ export default function AirportTransfersPage() {
         <FooterContact />
         <div>
           <h3>Book</h3>
-          <Link href="/book-now">Booking form</Link>
+          {/* <Link href="/book-now">Booking form</Link> */}
           <Link href="/rates">Fixed rates</Link>
         </div>
         <div>

@@ -1,3 +1,6 @@
+// Not routed: the parent folder's "_" prefix keeps it out of the App Router
+// until the client asks for the booking flow. Rename the folder to "book-now"
+// to publish it again.
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BookingForm } from "@/components/BookingForm";

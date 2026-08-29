@@ -33,9 +33,10 @@ export default function BoqueteTaxiPage() {
               />
             </p>
             <div className="cta-row">
+              {/* Booking page on hold until the client asks for it.
               <Link className="solid-button" href="/book-now">
                 <T en="Request a ride" es="Solicitar viaje" />
-              </Link>
+              </Link> */}
               <Link className="outline-button" href="/rates">
                 <T en="View local rates" es="Ver tarifas locales" />
               </Link>
@@ -139,7 +140,7 @@ export default function BoqueteTaxiPage() {
         <FooterContact />
         <div>
           <h3>Book</h3>
-          <Link href="/book-now">Booking form</Link>
+          {/* <Link href="/book-now">Booking form</Link> */}
           <Link href="/rates">Local rates</Link>
         </div>
         <div>

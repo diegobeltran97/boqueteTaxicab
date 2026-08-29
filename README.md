@@ -22,7 +22,7 @@ npm run build    # production build
 | `src/app/boquete-taxi/page.tsx` | `/boquete-taxi` |
 | `src/app/tours/page.tsx` | `/tours` |
 | `src/app/rates/page.tsx` | `/rates` — prices live in the `RATES` array |
-| `src/app/book-now/page.tsx` | `/book-now` |
+| `src/app/_book-now/page.tsx` | Booking page, **off** — the `_` prefix keeps the folder out of routing. Rename to `book-now` to publish it, and uncomment the links marked "Booking page on hold" |
 | `src/app/about/page.tsx` | `/about` |
 | `src/components/` | Header, footer, sticky bar, hero canvas, booking form, `<T>` |
 | `src/lib/site.ts` | Phone, WhatsApp, email, nav links — edit contact details here |

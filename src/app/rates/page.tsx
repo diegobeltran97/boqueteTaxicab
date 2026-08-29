@@ -136,12 +136,13 @@ export default function RatesPage() {
               </article>
             </div>
             <div className="cta-row">
+              {/* Booking page on hold until the client asks for it.
               <Link className="solid-button" href="/book-now">
                 <T
                   en="Book with fixed USD price"
                   es="Reservar con precio fijo USD"
                 />
-              </Link>
+              </Link> */}
               <a className="outline-button" href={CONTACT.whatsapp}>
                 <T en="Ask a question" es="Hacer una pregunta" />
               </a>
@@ -157,10 +158,11 @@ export default function RatesPage() {
           <Link href="/airport-transfers">David Airport transfer</Link>
           <Link href="/airport-transfers">Panama City transfer</Link>
         </div>
+        {/* Whole column commented out: the booking link was its only entry.
         <div>
           <h3>Book</h3>
           <Link href="/book-now">Booking form</Link>
-        </div>
+        </div> */}
       </SiteFooter>
     </>
   );

@@ -33,9 +33,10 @@ export default function ToursPage() {
               />
             </p>
             <div className="cta-row">
+              {/* Booking page on hold until the client asks for it.
               <Link className="solid-button" href="/book-now">
                 <T en="Plan a tour ride" es="Planear tour" />
-              </Link>
+              </Link> */}
               <Link className="outline-button" href="/rates">
                 <T en="Tour rates" es="Tarifas de tours" />
               </Link>
@@ -150,7 +151,7 @@ export default function ToursPage() {
         </div>
         <div>
           <h3>Book</h3>
-          <Link href="/book-now">Booking form</Link>
+          {/* <Link href="/book-now">Booking form</Link> */}
           <Link href="/rates">Fixed USD rates</Link>
         </div>
       </SiteFooter>

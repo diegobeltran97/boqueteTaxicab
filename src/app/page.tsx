@@ -332,9 +332,10 @@ export default function HomePage() {
           <h3>
             <T en="Book ahead" es="Reserve antes" />
           </h3>
+          {/* Booking page on hold until the client asks for it.
           <Link href="/book-now">
             <T en="Booking form" es="Formulario de reserva" />
-          </Link>
+          </Link> */}
           <Link href="/rates">
             <T en="Fixed USD rates" es="Tarifas fijas en USD" />
           </Link>
