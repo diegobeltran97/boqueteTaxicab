@@ -8,7 +8,7 @@ import { CONTACT } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Fixed USD Taxi Rates in Boquete | Boquete Taxi Cab",
   description:
-    "See placeholder fixed USD prices for David Airport to Boquete transfer, Panama City to Boquete taxi, Boquete taxi rides, and Boquete tours.",
+    "See placeholder fixed USD prices for David Airport to Boquete transfer, Panama City to Boquete taxi, and Boquete taxi rides.",
 };
 
 // Replace the placeholder prices with the final approved rates.
@@ -37,18 +37,19 @@ const RATES = [
     time: "Local",
     price: "$XX",
   },
-  {
-    route: "Boquete coffee farm ride",
-    service: "Tour transportation",
-    time: "By route",
-    price: "$XX",
-  },
-  {
-    route: "Hot springs / day trip",
-    service: "Private tour ride",
-    time: "Half or full day",
-    price: "$XXX",
-  },
+  // Tour rows on hold with the rest of the tours content:
+  // {
+  //   route: "Boquete coffee farm ride",
+  //   service: "Tour transportation",
+  //   time: "By route",
+  //   price: "$XX",
+  // },
+  // {
+  //   route: "Hot springs / day trip",
+  //   service: "Private tour ride",
+  //   time: "Half or full day",
+  //   price: "$XXX",
+  // },
 ];
 
 export default function RatesPage() {

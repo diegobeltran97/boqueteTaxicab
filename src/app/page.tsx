@@ -93,7 +93,8 @@ export default function HomePage() {
                 es="Viajes privados para llegadas, rutas locales y aventuras en Boquete."
               />
             </h2>
-            <div className="grid-4">
+            {/* Back to "grid-4" when the tours card below is restored. */}
+            <div className="grid-3">
               <article className="card">
                 <span className="mini-label">DAV</span>
                 <h3>
@@ -136,6 +137,7 @@ export default function HomePage() {
                   />
                 </p>
               </article>
+              {/* Tours on hold until the client asks for them.
               <article className="card">
                 <span className="mini-label">TOURS</span>
                 <h3>
@@ -147,7 +149,7 @@ export default function HomePage() {
                     es="Fincas de cafe, aguas termales, senderos, miradores y paseos de dia."
                   />
                 </p>
-              </article>
+              </article> */}
             </div>
           </div>
         </section>
@@ -314,8 +316,8 @@ export default function HomePage() {
       <SiteFooter
         blurb={
           <T
-            en="Private airport transfers, Boquete taxi rides, and local tours with fixed USD pricing."
-            es="Traslados privados al aeropuerto, taxi local y tours con precios fijos en USD."
+            en="Private airport transfers and Boquete taxi rides with fixed USD pricing."
+            es="Traslados privados al aeropuerto y taxi local con precios fijos en USD."
           />
         }
       >

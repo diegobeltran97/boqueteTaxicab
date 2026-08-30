@@ -20,7 +20,7 @@ npm run build    # production build
 | `src/app/page.tsx` | Home (`/`) |
 | `src/app/airport-transfers/page.tsx` | `/airport-transfers` |
 | `src/app/boquete-taxi/page.tsx` | `/boquete-taxi` |
-| `src/app/tours/page.tsx` | `/tours` |
+| `src/app/_tours/page.tsx` | Tours page, **off** — same `_` prefix trick; rename to `tours` and uncomment the links marked "Tours on hold" |
 | `src/app/rates/page.tsx` | `/rates` — prices live in the `RATES` array |
 | `src/app/_book-now/page.tsx` | Booking page, **off** — the `_` prefix keeps the folder out of routing. Rename to `book-now` to publish it, and uncomment the links marked "Booking page on hold" |
 | `src/app/about/page.tsx` | `/about` |

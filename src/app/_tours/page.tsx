@@ -1,3 +1,5 @@
+// Not routed: the parent folder's "_" prefix keeps it out of the App Router
+// until the client asks for tours. Rename the folder to "tours" to publish it.
 import type { Metadata } from "next";
 import Link from "next/link";
 import { RouteCanvas } from "@/components/RouteCanvas";

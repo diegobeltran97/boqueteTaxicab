@@ -176,7 +176,8 @@ export default function AboutPage() {
           <h3>Services</h3>
           <Link href="/airport-transfers">Airport transfers</Link>
           <Link href="/boquete-taxi">Local taxi</Link>
-          <Link href="/tours">Tours</Link>
+          {/* Tours on hold until the client asks for them.
+          <Link href="/tours">Tours</Link> */}
         </div>
         <div>
           <h3>Pricing</h3>
