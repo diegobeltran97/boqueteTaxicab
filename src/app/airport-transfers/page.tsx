@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+// Unused while the booking and rates links below are on hold.
+// import Link from "next/link";
 import { RouteCanvas } from "@/components/RouteCanvas";
 import { FooterContact, SiteFooter } from "@/components/SiteFooter";
 import { T } from "@/components/T";
@@ -32,15 +33,15 @@ export default function AirportTransfersPage() {
                 es="Reserve traslado privado de DAV a Boquete con conductor que habla ingles, precio fijo en USD, seguimiento de vuelo, ayuda con equipaje y letrero al llegar."
               />
             </p>
+            {/* Booking and rates pages on hold until the client asks for them.
             <div className="cta-row">
-              {/* Booking page on hold until the client asks for it.
               <Link className="solid-button" href="/book-now">
                 <T en="Book airport transfer" es="Reservar traslado" />
-              </Link> */}
+              </Link>
               <Link className="outline-button" href="/rates">
                 <T en="See fixed rates" es="Ver tarifas fijas" />
               </Link>
-            </div>
+            </div> */}
             <div className="trust-strip">
               <div className="trust-item">
                 <strong>DAV to Boquete</strong>
@@ -184,11 +185,12 @@ export default function AirportTransfersPage() {
 
       <SiteFooter blurb="English-speaking drivers. Fixed USD prices. Book ahead.">
         <FooterContact />
+        {/* Booking and rates pages on hold until the client asks for them.
         <div>
           <h3>Book</h3>
-          {/* <Link href="/book-now">Booking form</Link> */}
+          <Link href="/book-now">Booking form</Link>
           <Link href="/rates">Fixed rates</Link>
-        </div>
+        </div> */}
         <div>
           <h3>Service area</h3>
           <p>Boquete, David Airport, Panama City, Chiriqui</p>

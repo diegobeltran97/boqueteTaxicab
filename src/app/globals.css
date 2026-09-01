@@ -573,6 +573,80 @@ textarea:focus {
   display: grid;
 }
 
+/* Tour cards: illustrated (or photographed) header over the standard card. */
+.tour-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 34px;
+}
+
+.tour-card {
+  background: var(--soft);
+  border: 1px solid rgba(255, 194, 22, 0.22);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.tour-art {
+  aspect-ratio: 4 / 3;
+  border-bottom: 1px solid rgba(255, 194, 22, 0.22);
+  overflow: hidden;
+}
+
+.tour-art img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.tour-body {
+  padding: 24px;
+}
+
+.tour-card h3 {
+  font-size: 22px;
+  line-height: 1.12;
+  margin: 0 0 12px;
+}
+
+.tour-card p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.52;
+  margin: 0;
+}
+
+.tour-facts {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+}
+
+.tour-facts li {
+  color: var(--dim);
+  font-size: 14px;
+  line-height: 1.45;
+  padding-left: 22px;
+  position: relative;
+}
+
+.tour-facts li::before {
+  background: var(--gold);
+  border-radius: 50%;
+  content: "";
+  height: 7px;
+  left: 0;
+  position: absolute;
+  top: 7px;
+  width: 7px;
+}
+
 .site-footer {
   background: #0c120e;
   border-top: 1px solid rgba(255, 194, 22, 0.22);
@@ -872,6 +946,7 @@ body[data-lang="es"] .mobile-lang-toggle [data-set-lang="es"] {
   .split-grid,
   .testimonial-grid,
   .photo-grid,
+  .tour-grid,
   .footer-grid {
     grid-template-columns: 1fr;
   }
@@ -946,6 +1021,7 @@ body[data-lang="es"] .mobile-lang-toggle [data-set-lang="es"] {
   .card,
   .testimonial,
   .rate-note,
+  .tour-body,
   .form-panel {
     padding: 20px;
   }

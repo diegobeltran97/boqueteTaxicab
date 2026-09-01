@@ -37,19 +37,36 @@ const RATES = [
     time: "Local",
     price: "$XX",
   },
-  // Tour rows on hold with the rest of the tours content:
-  // {
-  //   route: "Boquete coffee farm ride",
-  //   service: "Tour transportation",
-  //   time: "By route",
-  //   price: "$XX",
-  // },
-  // {
-  //   route: "Hot springs / day trip",
-  //   service: "Private tour ride",
-  //   time: "Half or full day",
-  //   price: "$XXX",
-  // },
+  {
+    route: "Boquete coffee farm ride",
+    service: "Tour transportation",
+    time: "By route",
+    price: "$XX",
+  },
+  {
+    route: "Hot springs / day trip",
+    service: "Private tour ride",
+    time: "Half or full day",
+    price: "$XXX",
+  },
+  {
+    route: "Volcan Baru sunrise trailhead",
+    service: "Private tour ride",
+    time: "Midnight drop-off + return",
+    price: "$XXX",
+  },
+  {
+    route: "Canon Macho de Monte (Cuesta de Piedra)",
+    service: "Private tour ride",
+    time: "Half day",
+    price: "$XXX",
+  },
+  {
+    route: "Cascada de la Chorcha (San Lorenzo)",
+    service: "Private tour ride",
+    time: "Full day",
+    price: "$XXX",
+  },
 ];
 
 export default function RatesPage() {
@@ -158,6 +175,10 @@ export default function RatesPage() {
           <h3>Airport</h3>
           <Link href="/airport-transfers">David Airport transfer</Link>
           <Link href="/airport-transfers">Panama City transfer</Link>
+        </div>
+        <div>
+          <h3>Tours</h3>
+          <Link href="/tours">Boquete tours</Link>
         </div>
         {/* Whole column commented out: the booking link was its only entry.
         <div>

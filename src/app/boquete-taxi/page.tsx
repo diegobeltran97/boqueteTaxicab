@@ -32,15 +32,15 @@ export default function BoqueteTaxiPage() {
                 es="Viajes privados confiables para hoteles, restaurantes, comunidades, fincas de cafe, citas y diligencias en Boquete."
               />
             </p>
+            {/* Booking and rates pages on hold until the client asks for them.
             <div className="cta-row">
-              {/* Booking page on hold until the client asks for it.
               <Link className="solid-button" href="/book-now">
                 <T en="Request a ride" es="Solicitar viaje" />
-              </Link> */}
+              </Link>
               <Link className="outline-button" href="/rates">
                 <T en="View local rates" es="Ver tarifas locales" />
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -138,11 +138,12 @@ export default function BoqueteTaxiPage() {
 
       <SiteFooter blurb="Boquete taxi service with English-speaking drivers and fixed USD prices.">
         <FooterContact />
+        {/* Booking and rates pages on hold until the client asks for them.
         <div>
           <h3>Book</h3>
-          {/* <Link href="/book-now">Booking form</Link> */}
+          <Link href="/book-now">Booking form</Link>
           <Link href="/rates">Local rates</Link>
-        </div>
+        </div> */}
         <div>
           <h3>Airport</h3>
           <Link href="/airport-transfers">David Airport to Boquete</Link>

@@ -15,7 +15,7 @@ export const SITE_URL = "https://boquetetaxicab.com";
 export const NAV_LINKS = [
   { href: "/airport-transfers", en: "Airport Transfers", es: "Aeropuerto" },
   { href: "/boquete-taxi", en: "Local Rides", es: "Taxi Local" },
-  // { href: "/tours", en: "Tours", es: "Tours" },
+  { href: "/tours", en: "Tours", es: "Tours" },
   // { href: "/rates", en: "Rates", es: "Tarifas" },
   //  { href: "/book-now", en: "Book Now", es: "Reservar" },
   { href: "/about", en: "Why Us", es: "Nosotros" },

@@ -93,8 +93,7 @@ export default function HomePage() {
                 es="Viajes privados para llegadas, rutas locales y aventuras en Boquete."
               />
             </h2>
-            {/* Back to "grid-4" when the tours card below is restored. */}
-            <div className="grid-3">
+            <div className="grid-4">
               <article className="card">
                 <span className="mini-label">DAV</span>
                 <h3>
@@ -137,7 +136,6 @@ export default function HomePage() {
                   />
                 </p>
               </article>
-              {/* Tours on hold until the client asks for them.
               <article className="card">
                 <span className="mini-label">TOURS</span>
                 <h3>
@@ -145,11 +143,11 @@ export default function HomePage() {
                 </h3>
                 <p>
                   <T
-                    en="Coffee farms, hot springs, hikes, scenic stops, and day trips with local drivers."
-                    es="Fincas de cafe, aguas termales, senderos, miradores y paseos de dia."
+                    en="Volcan Baru, Macho de Monte, La Chorcha, coffee farms, hot springs, and day trips with local drivers."
+                    es="Volcan Baru, Macho de Monte, La Chorcha, fincas de cafe, aguas termales y paseos de dia."
                   />
                 </p>
-              </article> */}
+              </article>
             </div>
           </div>
         </section>
@@ -329,19 +327,20 @@ export default function HomePage() {
           <Link href="/airport-transfers">David Airport to Boquete</Link>
           <Link href="/airport-transfers">Panama City to Boquete</Link>
           <Link href="/boquete-taxi">Boquete taxi</Link>
+          <Link href="/tours">Boquete tours</Link>
         </div>
+        {/* Booking and rates pages on hold until the client asks for them.
         <div>
           <h3>
             <T en="Book ahead" es="Reserve antes" />
           </h3>
-          {/* Booking page on hold until the client asks for it.
           <Link href="/book-now">
             <T en="Booking form" es="Formulario de reserva" />
-          </Link> */}
+          </Link>
           <Link href="/rates">
             <T en="Fixed USD rates" es="Tarifas fijas en USD" />
           </Link>
-        </div>
+        </div> */}
       </SiteFooter>
     </>
   );
