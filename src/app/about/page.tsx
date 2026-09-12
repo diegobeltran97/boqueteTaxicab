@@ -3,11 +3,12 @@ import Link from "next/link";
 import { RouteCanvas } from "@/components/RouteCanvas";
 import { FooterContact, SiteFooter } from "@/components/SiteFooter";
 import { T } from "@/components/T";
+import { CONTACT } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Why Choose Boquete Taxi Cab | English-Speaking Drivers",
+  title: "About Boquete Taxi Cab | Airport Transfers & Local Taxi",
   description:
-    "Learn why travelers choose Boquete Taxi Cab for safe private transfers, English-speaking drivers, fixed USD prices, and reliable airport pickup.",
+    "Learn how Boquete Taxi Cab helps travelers arrange airport transfers, local taxi rides, and private tour transportation around Boquete and Chiriqui.",
 };
 
 export default function AboutPage() {
@@ -25,50 +26,58 @@ export default function AboutPage() {
             </p>
             <h1 className="page-title">
               <T
-                en="Why Travelers Choose Boquete Taxi Cab"
-                es="Por que elegir Boquete Taxi Cab"
+                en="Private taxi service for Boquete, airport arrivals, and day trips"
+                es="Taxi privado para Boquete, llegadas de aeropuerto y paseos"
               />
             </h1>
             <p className="page-copy">
               <T
-                en="Premium does not need to feel flashy. It should feel safe, clear, punctual, and easy to trust before a visitor arrives in Panama."
-                es="Premium no tiene que sentirse exagerado. Debe sentirse seguro, claro, puntual y facil de confiar antes de llegar a Panama."
+                en="Boquete Taxi Cab helps visitors arrange reliable private transportation before they arrive: airport pickups, local rides, and tour transportation with clear communication by phone or WhatsApp."
+                es="Boquete Taxi Cab ayuda a visitantes a coordinar transporte privado confiable antes de llegar: recogidas en aeropuerto, viajes locales y transporte turistico con comunicacion clara por telefono o WhatsApp."
               />
             </p>
+            <div className="cta-row">
+              <a className="solid-button" href={CONTACT.whatsapp}>
+                <T en="Message on WhatsApp" es="Escribir por WhatsApp" />
+              </a>
+              <a className="outline-button" href={CONTACT.phoneHref}>
+                <T en="Call the driver" es="Llamar al conductor" />
+              </a>
+            </div>
             <div className="trust-strip">
               <div className="trust-item">
                 <strong>
                   <T
-                    en="English-speaking drivers"
-                    es="Conductores que hablan ingles"
+                    en="Airport transfers"
+                    es="Traslados al aeropuerto"
                   />
                 </strong>
                 <span>
                   <T
-                    en="Clear communication for U.S. visitors and retirees."
-                    es="Comunicacion clara para visitantes y residentes."
-                  />
-                </span>
-              </div>
-              <div className="trust-item">
-                <strong>
-                  <T en="Reliable pickup" es="Recogida confiable" />
-                </strong>
-                <span>
-                  <T
-                    en="Book ahead and know who is meeting you."
-                    es="Reserve antes y sepa quien lo espera."
+                    en="David Airport and Panama City transfers planned with pickup time, luggage, and flight details."
+                    es="Traslados desde David y Ciudad de Panama coordinados con hora, equipaje y datos de vuelo."
                   />
                 </span>
               </div>
               <div className="trust-item">
                 <strong>
-                  <T en="Fixed USD prices" es="Precios fijos en USD" />
+                  <T en="Local taxi rides" es="Viajes locales" />
                 </strong>
                 <span>
                   <T
-                    en="No surprise fares after a long travel day."
-                    es="Sin sorpresas despues de un largo viaje."
+                    en="Hotel pickups, restaurants, appointments, errands, coffee farms, and rides around Boquete."
+                    es="Recogidas en hoteles, restaurantes, citas, diligencias, fincas de cafe y viajes dentro de Boquete."
+                  />
+                </span>
+              </div>
+              <div className="trust-item">
+                <strong>
+                  <T en="Tour transportation" es="Transporte turistico" />
+                </strong>
+                <span>
+                  <T
+                    en="Private rides to Boquete viewpoints, hikes, hot springs, coffee farms, and Chiriqui day trips."
+                    es="Viajes privados a miradores, senderos, aguas termales, fincas de cafe y paseos por Chiriqui."
                   />
                 </span>
               </div>
@@ -81,50 +90,50 @@ export default function AboutPage() {
             <div>
               <p className="eyebrow">
                 <T
-                  en="Safety and confidence"
-                  es="Seguridad y confianza"
+                  en="How the service works"
+                  es="Como funciona el servicio"
                 />
               </p>
               <h2 className="section-title">
                 <T
-                  en="Built for travelers who plan ahead."
-                  es="Pensado para viajeros que planifican."
+                  en="A ride that is coordinated before you step outside."
+                  es="Un viaje coordinado antes de salir."
                 />
               </h2>
               <p className="section-copy">
                 <T
-                  en="This page should eventually include the company story, years of experience, driver names, vehicle details, licensing notes, and real photos."
-                  es="Esta pagina debe incluir historia, anos de experiencia, nombres de conductores, detalles de vehiculos, permisos y fotos reales."
+                  en="Send your pickup point, destination, time, passenger count, luggage, and flight number when needed. The ride is confirmed in advance so you know where to meet, what to expect, and how to contact your driver."
+                  es="Envie punto de recogida, destino, hora, cantidad de pasajeros, equipaje y numero de vuelo cuando aplique. El viaje se confirma antes para que sepa donde encontrarse, que esperar y como contactar al conductor."
                 />
               </p>
             </div>
             <div className="rate-note">
               <span className="mini-label">
-                <T en="Content to add" es="Contenido para agregar" />
+                <T en="What travelers value" es="Lo que valoran los viajeros" />
               </span>
               <ul className="check-list">
                 <li>
                   <T
-                    en="Years in business and service area."
-                    es="Anos de experiencia y area de servicio."
+                    en="English and Spanish communication by phone or WhatsApp."
+                    es="Comunicacion en ingles y espanol por telefono o WhatsApp."
                   />
                 </li>
                 <li>
                   <T
-                    en="Vehicle photos and capacity."
-                    es="Fotos de vehiculos y capacidad."
+                    en="Clear pickup details for airports, hotels, homes, and tour meeting points."
+                    es="Detalles claros de recogida en aeropuertos, hoteles, casas y puntos de encuentro."
                   />
                 </li>
                 <li>
                   <T
-                    en="Driver photos and short bios."
-                    es="Fotos y biografias cortas de conductores."
+                    en="Private rides for airport transfers, local taxi service, and tour transportation."
+                    es="Viajes privados para traslados al aeropuerto, taxi local y transporte turistico."
                   />
                 </li>
                 <li>
                   <T
-                    en="Verified Google review excerpts."
-                    es="Extractos reales de resenas de Google."
+                    en="Fixed USD price confirmed before the ride whenever the route can be quoted in advance."
+                    es="Precio fijo en USD confirmado antes del viaje cuando la ruta se puede cotizar por adelantado."
                   />
                 </li>
               </ul>
@@ -135,42 +144,36 @@ export default function AboutPage() {
         <section className="section alt">
           <div className="section-inner">
             <p className="eyebrow">
-              <T en="Photo direction" es="Direccion de fotos" />
+              <T en="Real service moments" es="Momentos reales del servicio" />
             </p>
-            <h2 className="section-title">
-              <T
-                en="Add real cars and drivers here."
-                es="Agregue aqui fotos reales de carros y conductores."
-              />
-            </h2>
             <div className="photo-grid">
               <div className="photo-slot">
-                <p>
-                  <T
-                    en="Vehicle exterior photo"
-                    es="Foto exterior del vehiculo"
-                  />
-                </p>
+                <img
+                  src="/whoWeAre/airport.jpeg"
+                  alt="Boquete Taxi Cab at Enrique Malek International Airport"
+                  loading="lazy"
+                />
               </div>
               <div className="photo-slot">
-                <p>
-                  <T en="Driver portrait photo" es="Foto del conductor" />
-                </p>
+                <img
+                  src="/whoWeAre/service.jpeg"
+                  alt="Boquete Taxi Cab driver with travelers in Boquete"
+                  loading="lazy"
+                />
               </div>
               <div className="photo-slot">
-                <p>
-                  <T
-                    en="Airport pickup photo"
-                    es="Foto de recogida en aeropuerto"
-                  />
-                </p>
+                <img
+                  src="/whoWeAre/tour_experience.jpeg"
+                  alt="Travelers walking a nature trail during a Boquete tour experience"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
         </section>
       </main>
 
-      <SiteFooter blurb="Safe, reliable private transfers in Boquete.">
+      <SiteFooter blurb="Airport transfers, local taxi rides, and private tour transportation in Boquete.">
         <FooterContact />
         <div>
           <h3>Services</h3>

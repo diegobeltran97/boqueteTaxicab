@@ -376,8 +376,7 @@ h1,
 
 .card,
 .testimonial,
-.rate-note,
-.photo-slot {
+.rate-note {
   padding: 24px;
 }
 
@@ -392,8 +391,7 @@ h1,
 
 .card p,
 .testimonial p,
-.rate-note p,
-.photo-slot p {
+.rate-note p {
   color: var(--muted);
   font-size: 16px;
   line-height: 1.52;
@@ -565,12 +563,25 @@ textarea:focus {
 }
 
 .photo-slot {
-  align-content: end;
+  align-items: center;
   aspect-ratio: 4 / 3;
   background:
     linear-gradient(145deg, rgba(255, 194, 22, 0.22), rgba(54, 165, 42, 0.11)),
     rgba(255, 255, 255, 0.045);
   display: grid;
+  justify-items: center;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+
+.photo-slot img {
+  display: block;
+  grid-area: 1 / 1;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
 }
 
 /* Tour cards: illustrated (or photographed) header over the standard card. */
