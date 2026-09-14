@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { LangProvider } from "@/components/LangProvider";
 import { MenuProvider } from "@/components/MenuProvider";
@@ -7,7 +8,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { StickyContact } from "@/components/StickyContact";
 import { WhatsAppFab } from "@/components/WhatsAppFab";
 import { langBootstrapScript } from "@/lib/lang";
-import { SITE_URL } from "@/lib/site";
+import { GA_MEASUREMENT_ID, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -23,6 +24,17 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body data-lang="en" suppressHydrationWarning>
         <script dangerouslySetInnerHTML={{ __html: langBootstrapScript }} />
+        {/* Google tag (gtag.js) — GA4 */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_MEASUREMENT_ID}');`}
+        </Script>
         <LangProvider>
           <MenuProvider>
             <a className="skip-link" href="#main">

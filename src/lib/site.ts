@@ -12,6 +12,9 @@ export const CONTACT = {
 
 export const SITE_URL = "https://boquetetaxicab.com";
 
+// Google Analytics 4 measurement ID.
+export const GA_MEASUREMENT_ID = "G-VCVSSSX2LJ";
+
 export const NAV_LINKS = [
   { href: "/airport-transfers", en: "Airport Transfers", es: "Aeropuerto" },
   { href: "/boquete-taxi", en: "Local Rides", es: "Taxi Local" },
