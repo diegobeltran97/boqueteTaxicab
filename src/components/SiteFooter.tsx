@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { CONTACT } from "@/lib/site";
+import { T } from "@/components/T";
 
 /**
  * Shared footer shell. Each page passes its own blurb and columns, matching the
@@ -24,6 +25,14 @@ export function SiteFooter({
           <p>{blurb}</p>
         </div>
         {children}
+      </div>
+      <div className="footer-credit">
+        <p>
+          <T en="Website by" es="Sitio web por" />{" "}
+          <a href="https://zygli.com/" target="_blank" rel="noopener noreferrer">
+            Zygli
+          </a>
+        </p>
       </div>
     </footer>
   );

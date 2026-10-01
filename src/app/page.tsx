@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { GoogleReviews } from "@/components/GoogleReviews";
 import { RouteCanvas } from "@/components/RouteCanvas";
 import { FooterContact, SiteFooter } from "@/components/SiteFooter";
 import { T } from "@/components/T";
@@ -203,56 +204,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="section">
-          <div className="section-inner">
-            <p className="eyebrow">
-              <T en="Traveler reviews" es="Opiniones de viajeros" />
-            </p>
-            <h2 className="section-title">
-              <T
-                en="Use verified Google reviews here."
-                es="Use opiniones verificadas de Google aqui."
-              />
-            </h2>
-            <div className="testimonial-grid">
-              <article className="testimonial">
-                <h3>Google review placeholder</h3>
-                <p>
-                  <T
-                    en="Replace with a verified review about the driver waiting at David Airport with a sign."
-                    es="Reemplazar con una opinion real sobre el conductor esperando en David con letrero."
-                  />
-                </p>
-              </article>
-              <article className="testimonial">
-                <h3>Google review placeholder</h3>
-                <p>
-                  <T
-                    en="Replace with a verified review about English communication and a clean vehicle."
-                    es="Reemplazar con una opinion real sobre comunicacion en ingles y vehiculo limpio."
-                  />
-                </p>
-              </article>
-              <article className="testimonial">
-                <h3>Google review placeholder</h3>
-                <p>
-                  <T
-                    en="Replace with a verified review about a fixed price from David Airport to Boquete."
-                    es="Reemplazar con una opinion real sobre precio fijo desde David a Boquete."
-                  />
-                </p>
-              </article>
-            </div>
-            <div className="cta-row">
-              <a
-                className="outline-button"
-                href="https://www.google.com/search?q=Boquete+Taxi+Cab+reviews"
-              >
-                <T en="View Google reviews" es="Ver resenas en Google" />
-              </a>
-            </div>
-          </div>
-        </section>
+        <GoogleReviews />
 
         <section className="section alt">
           <div className="section-inner">

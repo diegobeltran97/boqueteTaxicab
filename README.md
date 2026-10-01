@@ -26,6 +26,7 @@ npm run build    # production build
 | `src/app/about/page.tsx` | `/about` |
 | `src/components/` | Header, footer, sticky bar, hero canvas, booking form, `<T>` |
 | `src/lib/site.ts` | Phone, WhatsApp, email, nav links — edit contact details here |
+| `src/lib/reviews.ts` | Google reviews fetch (Featurable API) + `FEATURABLE_WIDGET_ID` setup notes |
 
 Bilingual copy uses `<T en="..." es="..." />`, which renders both strings and
 lets CSS (`body[data-lang]`) show the active one, same as the template.
@@ -45,6 +46,10 @@ Or from this folder: `npx vercel` (first deploy) and `npx vercel --prod`.
 - Replace the placeholder phone/WhatsApp/email in `src/lib/site.ts`.
 - Replace `$XX` placeholder prices in `src/app/rates/page.tsx`.
 - Set `SITE_URL` in `src/lib/site.ts` to the real domain.
-- Swap the Google review placeholders on the home page for verified reviews.
+- Google reviews on the home page are live via the free Featurable API — pick
+  which ones show at [featurable.com/app/widgets](https://featurable.com/app/widgets),
+  no deploy needed (the site re-fetches once a day). The widget ID and place ID
+  live in `src/lib/site.ts`; see `src/lib/reviews.ts` for how it is fetched. If
+  the API is ever unreachable, the section falls back to placeholder cards.
 - The booking form currently prepares a WhatsApp message; wire it to email/CRM
   when that is decided (`src/components/BookingForm.tsx`).
